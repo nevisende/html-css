@@ -13,14 +13,18 @@
 
     <form action="" id="survey-form">
       <label for="name" id="name-label">Name</label>
-      <input type="text" id="name"  />
+      <input type="text" id="name" placeholder="Name" />
       <br />
       <label for="email" id="email-label">Email</label>
-      <input type="email" id="email" />
+      <input type="email" id="email" placeholder="Email" />
       <br />
       <label for="number" id="number-label">Number</label>
-      <input type="number" id="number"  max="100" min="0"/>
-      <br>
+      <input type="number" id="number" max="100" min="0" placeholder="Number" />
+      <br />
+      <select name="dropdown" id="dropdown">
+        <option>1</option>
+        <option>2</option>
+      </select>
       <div class="radio-group">
         <label ><input type="radio" name="radios" >Radio 1</label>
         <label ><input type="radio" name="radios" >Radio 2</label>
@@ -34,8 +38,8 @@
         <label ><input type="checkbox" name="checkboxes" value="Tree">Checkbox 3 </label>
       
       </div>
-      
     </form>
+    
 
     <script src="js/index.js"></script>
   </body>

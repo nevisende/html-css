@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
+  <body style="text-align: center">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <h1 id="title">Survey Form</h1>
     <p id="description">Description text..</p>
 
-    <form action="" id="survey-form">
+    <form action="" id="survey-form" style="text-align: center">
       <label for="name" id="name-label">Name</label>
       <input type="text" id="name" placeholder="Name" />
       <br />
@@ -26,20 +26,30 @@
         <option>2</option>
       </select>
       <div class="radio-group">
-        <label ><input type="radio" name="radios" >Radio 1</label>
-        <label ><input type="radio" name="radios" >Radio 2</label>
-        <label ><input type="radio" name="radios" >Radio 3</label>
+        <label><input type="radio" name="radios" />Radio 1</label>
+        <label><input type="radio" name="radios" />Radio 2</label>
+        <label><input type="radio" name="radios" />Radio 3</label>
       </div>
-      
-      <br>
+
+      <br />
       <div class="checkbox-group">
-        <label ><input type="checkbox" name="checkboxes" value="One">Checkbox 1 </label>
-        <label ><input type="checkbox" name="checkboxes" value="Two">Checkbox 2 </label>
-        <label ><input type="checkbox" name="checkboxes" value="Tree">Checkbox 3 </label>
-      
+        <label
+          ><input type="checkbox" name="checkboxes" value="One" />Checkbox 1
+        </label>
+        <label
+          ><input type="checkbox" name="checkboxes" value="Two" />Checkbox 2
+        </label>
+        <label
+          ><input type="checkbox" name="checkboxes" value="Tree" />Checkbox 3
+        </label>
       </div>
+      <div class="textarea-group">
+        <label for="comments">Additional comments</label>
+        <br />
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
     </form>
-    
 
     <script src="js/index.js"></script>
   </body>
